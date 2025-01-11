@@ -150,6 +150,17 @@ SELECT DISTINCT
     END AS AMPM
 FROM ratings_staging r;
 
+--dim_tags
+CREATE OR REPLACE TABLE Dim_Tags AS
+SELECT DISTINCT
+    tg.id,
+    tg.movie_id AS MoviesId,
+    tg.user_id AS UsersId,
+    tg.tags AS Tag,
+    tg.created_at AS CreatedAt
+FROM tags_staging tg;
+
+
 --fact_ratings
 CREATE OR REPLACE TABLE Fact_Ratings AS
 SELECT
