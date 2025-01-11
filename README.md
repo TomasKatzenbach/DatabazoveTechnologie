@@ -25,7 +25,7 @@ Zdrojové dáta pochádzajú z MovieLens datasetu dostupného [tu](https://group
 Surové dáta sú usporiadané v relačnom modeli, ktorý je znázornený na **entitno-relačnom diagrame (ERD)**:
 
 <p align="center">
-  <img src="https://https://github.com/TomasKatzenbach/DatabazoveTechnologie/blob/main/MovieLens_ERD.png" alt="ERD Schema">
+  <img src="https://github.com/TomasKatzenbach/DatabazoveTechnologie/blob/main/MovieLens_ERD.png?raw=true" alt="ERD Schema">
   <br>
   <em>Obrázok 1 Entitno-relačná schéma MovieLens</em>
 </p>
@@ -43,7 +43,7 @@ Navrhnutý bol **hviezdicový model (star schema)**, pre efektívnu analýzu, kd
 
 
 <p align="center">
-  <img src="https://https://github.com/TomasKatzenbach/DatabazoveTechnologie/blob/main/star_schema.png" alt="Star Schema">
+  <img src="https://github.com/TomasKatzenbach/DatabazoveTechnologie/blob/main/star_schema.png?raw=true" alt="Star Schema">
   <br>
   <em>Obrázok 2 Schéma hviezdy pre MovieLens</em>
 </p>
@@ -168,7 +168,7 @@ ETL proces v Snowflake umožnil spracovanie pôvodných dát z `.csv` formátu d
 
 Dashboard obsahuje 5 vizualizácií, ktoré poskytujú základný prehľad o kľúčových metrikách a trendoch týkajúcich sa filmov, používateľov a hodnotení. Tieto vizualizácie odpovedajú na dôležité otázky a umožňujú lepšie pochopiť správanie používateľov a ich preferencie.
 <p align="center">
-  <img src="https://https://github.com/TomasKatzenbach/DatabazoveTechnologie/blob/main/movielens_dashboard.png" alt="ERD Schema">
+  <img src="https://github.com/TomasKatzenbach/DatabazoveTechnologie/blob/main/movielens_dashboard.png?raw=true" alt="Dashboard">
   <br>
   <em>Obrázok 3 Dashboard MovieLens datasetu</em>
 </p>
