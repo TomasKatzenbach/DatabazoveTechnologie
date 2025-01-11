@@ -177,3 +177,18 @@ LEFT JOIN tags_staging tg
    AND r.movie_id = tg.movie_id
 LEFT JOIN Dim_Time dt 
     ON TIME(r.rated_at) = dt.FullTime;
+
+--optimalizacia úložiska
+DROP TABLE IF EXISTS age_group_staging;
+DROP TABLE IF EXISTS occupations_staging;
+DROP TABLE IF EXISTS movies_staging;
+DROP TABLE IF EXISTS genres_staging;
+DROP TABLE IF EXISTS genres_movies_staging;
+DROP TABLE IF EXISTS users_staging;
+DROP TABLE IF EXISTS tags_staging;
+DROP TABLE IF EXISTS ratings_staging;
+
+
+
+
+
