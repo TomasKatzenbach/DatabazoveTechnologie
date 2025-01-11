@@ -29,16 +29,15 @@ JOIN Dim_Time dt ON TIME(r.rated_at) = dt.FullTime
 GROUP BY dt.AMPM
 ORDER BY dt.AMPM;
 
-//Top 10 používateľov podľa počtu hodnotení
+// Priemerné hodnotenie a počet hodnotení podľa tagov
 SELECT 
-    u.id AS UserID,
+    dt.Tag AS Tag,
+    AVG(r.rating) AS AvgRating,
     COUNT(r.id) AS RatingsCount
 FROM ratings_staging r
-JOIN users_staging u ON r.user_id = u.id
-GROUP BY u.id
-ORDER BY RatingsCount DESC
-LIMIT 10;
-
+JOIN Dim_Tags dt ON r.movie_id = dt.MoviesId AND r.user_id = dt.UsersId
+GROUP BY dt.Tag
+ORDER BY RatingsCount DESC, AvgRating DESC;
 
 //Priemerné hodnotenie filmov podľa roku vydania.
 SELECT 
